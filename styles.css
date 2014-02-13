@@ -349,13 +349,20 @@ h1, h2, h3 {
   color:#fff;
   font-size:25px; 
 }
+h3.diamond {
+  font-size:33px;
+  color:#777;
+}
 h3.gold {
   font-size:30px;
   color:#e8ba00;
 }
 h3.silver {
   font-size:25px;
-  color:#777;
+  color:#5a5a5a;
+}
+.silver-img img {
+	height:90px;
 }
 h3.bonze {
   font-size:20px;
@@ -403,6 +410,18 @@ h3.bonze {
 #map_canvas {
   height:320px;
 }
+
+#park_over {
+  width:98%;
+  padding:1%;
+  background:#971B0C;
+}
+#park {
+  height:320px;
+  background: transparent url(envipark.jpg) bottom center no-repeat;
+  background-size:cover;
+}
+
 #menu span.link:hover {
     background-color:#336699;
 }
@@ -451,6 +470,9 @@ img.office {
 }
 .diamondtop p a,.diamondtop p a:hover {
 	border:0;
+}
+.diamondtop img {
+	width:240px;
 }
 img.sponsor {
   border:1px solid #777;
@@ -768,12 +790,12 @@ img.slimbox_thumb {
 }
 /**multitrack settings */
 .programs .program .trequarti {
-  width:30%;
+  width:40%;
   margin: 0 5%;
   
 }
 .programs .program3 .trequarti {
-  margin: 0 30%;
+  margin: 0 22%;
   
 }
 /*
