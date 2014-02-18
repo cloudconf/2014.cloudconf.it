@@ -496,10 +496,14 @@ img.sponsor {
 	background:#f1f1f1;
 	color:#000;
 	width:22%;
-	padding:1%;
+	padding:2% 1%;
 	text-align:center;
 	box-shadow: 1px 1px 3px #336699;
 }
+
+.news .price p{
+	color:#000;
+} 
 
 .break {
   height:240px;
@@ -748,8 +752,8 @@ img.slimbox_thumb {
   padding:15px 0;
 }
 .programs .program h3,.programs .program p {
-  width:94%;
-  padding:5px 0 5px 5%;
+  width:100%;
+  padding:5px 0 5px;
   text-align:left;
   margin-top:0;
   color:#000;
@@ -764,13 +768,15 @@ img.slimbox_thumb {
 }
 .programs .program p.speaker {
   font-size:15px;
+  
+  color:#000;
 }
 .programs .program p.speaker a{
   color:#196b9a;
 }
 .programs .program h3{
   font-weight:bold;
-  font-size:22px;
+  font-size:20px;
   color:#000;
 }
 .programs .program a {
@@ -791,12 +797,23 @@ img.slimbox_thumb {
 /**multitrack settings */
 .programs .program .trequarti {
   width:40%;
-  margin: 0 5%;
+  padding: 1%;
+  margin:0;
+  border-left:1px solid #f1f1f1;
   
 }
 .programs .program3 .trequarti {
-  margin: 0 22%;
-  
+  /*padding: 1% 24%;
+  margin:0;
+  width:40%;
+  text-align:center;
+  border-left:1px solid #f1f1f1;*/
+  width:80%;  
+}
+.programs .program p.abstract {
+	width:96%;
+	/**padding:0  4% 4% 0;
+	box-shadow:4px 4px 4px #f1f1f1;*/
 }
 /*
 .program .aws { background: transparent url(talk-aws.png) center right no-repeat; }
@@ -809,10 +826,8 @@ img.slimbox_thumb {
   color:#fff;
 }
 
-.pizza { 
-  background: transparent url(pizza.png) center left no-repeat; 
-}
-.coffee { background: transparent url(coffee.png) center left no-repeat; }
+.programs .program .pizza {  padding-right:0; width:17%;background: transparent url(pizza.png) center right no-repeat;}
+.programs .program .coffee { padding-right:0;width:17%;background: transparent url(coffee.png) center right no-repeat; }
 #twttrHubFrameSecure, #twttrHubFrame {display:none; visibility:hidden;}
 
 
