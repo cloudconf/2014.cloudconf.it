@@ -60,9 +60,9 @@ window.addEvent('domready', function() {
     initialize_map();
 
     var modal = {
-        title: "",
-        contents: "",
-        go: false
+        title: "Solo fino a giovedì 6 marzo i biglietti scontati!",
+        contents: "I workshop della Cloud Conference sono una grande opportunità per seguire corsi specializati.<br/><br/>Fino a gioedì sono disponibili i <strong>biglietti scontati</strong> inclusivi dell'ingresso alla Conference, approfittane!",
+        go: true
         
             
     }
@@ -77,9 +77,9 @@ window.addEvent('domready', function() {
             modal.go = true;
         break;
         default:
-            modal.title = "I biglietti scontati sono disponibili!";
+           /* modal.title = "I biglietti scontati sono disponibili!";
             modal.contents = "Prenotando in anticipo puoi usfruire di un grande sconto: il corso completo a soli <strong>349,00</strong> &euro; (invece che 499,00)!";
-            modal.go = false;
+            modal.go = false;*/
         break;
     }
     
@@ -407,7 +407,7 @@ window.addEvent('domready', function() {
                             <div class='trequarti destra'>
                                 <h3><span class='grassetto'>Biglietti scontati</span> (iva inclusa)</h3>
                                 <h3 style='font-size:15px;'><span style="display:inline-block;width:110px">PHP e AWS:</span> 89,00 &euro; invece di 129,00 &euro;</h3>
-                                <h3 style='font-size:15px;'><span style="display:inline-block;width:110px">AngularJs:</span> 89,90 &euro;  invece di 129,00 &euro;</h3>
+                                <h3 style='font-size:15px;'><span style="display:inline-block;width:110px">AngularJs:</span> <span class="testo_rosso">esaurito</span>, ora a 129,00 &euro;</h3>
                                 <h3 style='font-size:15px;'><span style="display:inline-block;width:110px">Deploy (4 ore):</span> 59,90 &euro; invece di 89,00 &euro;</h3>
                             </div> 
                         </div>
@@ -427,7 +427,7 @@ window.addEvent('domready', function() {
                 
                 <div class='lineare' >
                 <div style="width:100%; text-align:left;" >
-                <iframe  src="https://www.eventbrite.it/tickets-external?eid=10657088639&ref=etckt" frameborder="0" height="396" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                <iframe  src="https://www.eventbrite.it/tickets-external?eid=10657088639&ref=etckt" frameborder="0" height="436" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
                 </div>
                 <div class='lineare testo_cen'>All'acquisto del biglieto viene corrisposta regolare fattura.</div>
             </div>
