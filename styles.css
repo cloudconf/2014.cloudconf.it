@@ -461,6 +461,12 @@ img.office {
 .diamondtop {
 	padding:0 10px;
 	background:#f1f1f1;
+	margin-tobbom:5px;
+	clear:both;
+	max-width:300px;
+}
+.goldtop {
+  color:#e8ba00;
 }
 .diamondtop p{
   display:block;
@@ -476,6 +482,9 @@ img.office {
 }
 .diamondtop img {
 	width:240px;
+}
+.goldtop img {
+	width:180px;
 }
 img.sponsor {
   border:1px solid #777;
@@ -499,7 +508,7 @@ img.sponsor {
 	background:#f1f1f1;
 	color:#000;
 	width:22%;
-	padding:2% 1%;
+	padding:1% 1%;
 	text-align:center;
 	box-shadow: 1px 1px 3px #336699;
 }
