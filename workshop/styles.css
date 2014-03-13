@@ -427,12 +427,15 @@ h3.bonze {
     
     text-decoration:none;
 }
-#map_canvas_over {
+#map_canvas_over,#map_canvas_over2 {
 	width:98%;
 	padding:1%;
 	background:#549ebd;
 }
-#map_canvas {
+#map_canvas_over2 {
+	background:#98d236;
+}
+#map_canvas, #map_canvas2 {
 	height:320px;
 }
 #menu span.link:hover {

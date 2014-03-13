@@ -24,7 +24,7 @@
 <script type="text/javascript" src="/mootools-1.4.0.1-more.js"></script>
 <script type="text/javascript" src="/simple-modal.js"></script>
 
-<link href="styles.css?r=3" rel="stylesheet" type="text/css" media="screen" />
+<link href="styles.css?r=4" rel="stylesheet" type="text/css" media="screen" />
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -50,6 +50,23 @@ function initialize_map() {
           });
 
       }
+function initialize_map2() {
+      var mapOptions = {
+            zoom: 16,
+            center: new google.maps.LatLng(45.050359, 7.669564),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false
+          }
+          var map = new google.maps.Map(document.getElementById('map_canvas2'), mapOptions);
+
+          var hotel = new google.maps.Marker({
+              position: new google.maps.LatLng(45.050359, 7.669564),
+              map: map,
+              icon: 'marker2.png',
+        title:"ToolBox Torino"
+          });
+
+      }
     </script>
 
 <script type='text/javascript'>  
@@ -58,6 +75,7 @@ window.addEvent('domready', function() {
     $$('.program2').fade(0.6);
     
     initialize_map();
+    initialize_map2();
 
     var modal = {
         title: "Solo fino a giovedì 6 marzo i biglietti scontati!",
@@ -346,7 +364,7 @@ window.addEvent('domready', function() {
                     <p class='testo17'>Workshop di 4 ore sul tema del deploy, partendo dallo sviluppo locale di un'app fino al deploy via Fabric, passando dalle metodologie di testing più corrette.</p>
                     <p><strong>A chi è rivolto</strong>: devOps e sviluppatori backend</p>
                     <p><strong>Docente</strong>: Luca Cipriani, Senior System Engineer at <a href="http://www.pasella.it/category/blog/1up-academy/" target="_blank">Cloud9IDE</a> e founder di <a href="http://www.sysapparchitect.com/" target="_blank">Sys App Architect</a>
-                    <p><strong>Cosa comprende</strong>: corso di 8 ore con coffe break, materiale didattico, connettività Wi-Fi, attestato di partecipazione, biglietto CloudConference</p>
+                    <p><strong>Cosa comprende</strong>: corso di 4 ore con coffe break, materiale didattico, connettività Wi-Fi, attestato di partecipazione, biglietto CloudConference</p>
                     <p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
                     </div>
                 </div>
@@ -436,11 +454,11 @@ window.addEvent('domready', function() {
         <div id='block4' class='block'> 
 	      <a name='location' class='ancor'></a> 
 	      <div class='title'>    
-	        <h3><span class='grassetto'>La Location</span></h3>
+	        <h3><span class='grassetto'>Le Location</span></h3>
 	      </div>
-	         <p class="testo_cen">Workhop e CloudConference si svolgeranno all'EnviPark, facilmente raggiungibile in auto e con i mezzi pubblici!</p>
-	         <p class="testo_cen"><strong><a href='http://www.envipark.com/category/centrocongressi/' target='_blank'>Centro Congressi EnviPark</a></strong><br/>via Livorno 60, Torino</p>
-	          
+	         <p class="testo_cen">I workshop <strong>PHP&amp;AWS e AngularJS</strong> si svolgeranno all'EnviPark, facilmente raggiungibile in auto e con i mezzi pubblici!</p>
+	         <p class="testo_cen">Il workshop <strong>Deploy</strong> si terrà invece al Toolbox Torino, anch'esso comodamente raggiungibile in metro.</p>
+	        
 	          <div class="lineare_20">
 	           <div class="meta">
 	              <div class='lineare_no' id='map_canvas_over'>
@@ -449,23 +467,48 @@ window.addEvent('domready', function() {
 	           </div>
 	           
 	            <div class="meta destra">
-	              <div class='lineare_no' id='park_over'>
-	                    <div class='lineare_no' id='park'></div>
-	              </div>
+	               <div class='lineare_no' id='map_canvas_over2'>
+                    <div class='lineare_no' id='map_canvas2'></div>
+                  </div>
 	           </div>
 	          
 	          </div>
 	      <div class='lineare_20'>
 	        <div class='meta'>
+	          <p><strong>WORKSHOP PHP&amp;AWS e ANGULARJS</strong></p>
+	          <p><strong><a href='http://www.envipark.com/category/centrocongressi/' target='_blank'>Centro Congressi EnviPark</a></strong>, via Livorno 60, Torino</p>
+              
 	          <p><strong>In Auto</strong></p>
 	          <p>La posizione dell'EnviPark (via Livorno 60) all’interno di Torino è strategicamente privilegiata: pur trovandosi nelle immediate vicinanze del centro città, è ottimamente collegato alle principali autostrade alle quali si accede senza dover transitare nel centro di Torino. Parcheggio gratuito.</p>
+	          
+	           <p><strong>In Treno e Aereo</strong></p>
+               <p>
+                   <a href='http://www.trenitalia.com/' target='_blank'>Trenitalia</a> e <a href='http://www.italotreno.it' target='_blank'>ItaloTreno</a> con provenienza Milano e nord Italia fermano alla <strong>Stazione di Porta Susa</strong>: prendere l'uscita "XVII Dicembre" e dalla piazza prendere il bus nr 72 (direzione Macchiavelli fino a Treviso).<br/><br/>
+                   L'aeroporto di <a href="http://www.aeroportoditorino.it/" target='_blank'>Caselle</a> è collegato alla stazione Dora GTT (distante 10 minuti a piedi dalla conferenza) con treni cadenziati ogni 30 minuti.
+               </p>
+	          
+	          
+	        </div>
+	        <div class='meta destra'>
+	          <p><strong>WORKSHOP DEPLOY</strong></p>
+	          <p><strong><a href='http://www.toolboxoffice.it' target='_blank'>TOOLBOX Office</a></strong>, via Agostino da Montefeltro 2, 10134, Torino</p>
+              
+	           <div>
+                    <p><strong>In Auto</strong></p>
+                    <p>Dall'autostrada, seguire le indicazioni per il centro e l'ospedale Molinette (sul navigatore potete cercare via Agostino da Montefeltro 2)<br/>&nbsp;</p>
+                </div>
+                <div>
+                    <p><strong>In Treno e Aereo</strong></p>
+                     <p>
+                        <a href='http://www.trenitalia.com/' target='_blank'>Trenitalia</a> e <a href='http://www.italotreno.it' target='_blank'>ItaloTreno</a> con provenienza Milano e nord Italia fermano alla <strong>Stazione di Porta Susa e Torino Porta Nuova</strong>: da entrambe le stazioni prendere la metropolitana interrata in direzione Lingotto e scendere alla Fermata Dante.
+                    </p>
+                    <p>Da Caselle Aeroporto: prendere la navetta che ferma alla Stazione di Porta Susa, da li preoseguire in metropolitana fino alla fermata Dante. 
+                </div>
+	          
+	          
 	        </div>
 	        <div class='meta destra' >
-	          <p><strong>In Treno e aereo</strong></p>
-	           <p>
-	               <a href='http://www.trenitalia.com/' target='_blank'>Trenitalia</a> e <a href='http://www.italotreno.it' target='_blank'>ItaloTreno</a> con provenienza Milano e nord Italia fermano alla <strong>Stazione di Porta Susa</strong>: prendere l'uscita "XVII Dicembre" e dalla piazza prendere il bus nr 72 (direzione Macchiavelli fino a Treviso).<br/><br/>
-	               L'aeroporto di <a href="http://www.aeroportoditorino.it/" target='_blank'>Caselle</a> è collegato alla stazione Dora GTT (distante 10 minuti a piedi dalla conferenza) con treni cadenziati ogni 30 minuti.
-	           </p>
+	         
 	        </div>
 	       
 	      </div>
