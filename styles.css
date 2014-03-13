@@ -841,6 +841,9 @@ img.slimbox_thumb {
 .programs .redis .trequarti {
 	background: transparent url(/speech_redis.png) center right no-repeat;
 }
+.programs .spotify .trequarti {
+	background: transparent url(/speech_spotify.png) center right no-repeat;
+}
 
 .tip_mini {
   padding:10px;
