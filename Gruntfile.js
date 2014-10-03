@@ -52,6 +52,7 @@ module.exports = function ( grunt ) {
         secretAccessKey: "<%= conf.aws.secretAccessKey %>",
         cache: false,
         access: "public-read",
+        region: "<%= conf.aws.region %>",
         bucket: "<%= conf.aws.bucket %>"
       },
       build: {
