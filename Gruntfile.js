@@ -1,9 +1,14 @@
 module.exports = function ( grunt ) {
   grunt.loadNpmTasks('grunt-aws');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   var taskConfig = {
     conf: require( './configuration.json' ),
+
+    clean: [
+        './build/'
+    ],
 
     copy: {
       v2013: {
@@ -59,5 +64,5 @@ module.exports = function ( grunt ) {
 
   grunt.initConfig(taskConfig);
 
-
+  grunt.registerTask( 'deploy', ['clean', 'copy', 's3']);
 };
