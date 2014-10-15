@@ -16,20 +16,15 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-                                                      
 
 <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css' />
-
-
 
 <meta property="og:site_name" content="Cloud Conference"/>
 <meta property="og:title" content="Cloud Conference 2014, il primo grande evento dedicati a Cloud computing e scalabilità"/>
 <meta property="og:url" content="http://www.cloudconf.it"/>
 <meta property="og:type" content="article"/>
-<meta property="og:image" content="http://www.cloudconf.it/clouds.png"/>
-<link rel="image_src" type="image/jpeg" href="http://www.cloudconf.it/clouds.png" />
-
-     
+<meta property="og:image" content="http://www.cloudconf.it/cloudconf_blue.png"/>
+<link rel="image_src" type="image/jpeg" href="http://www.cloudconf.it/cloudconf_blue.png" />
 <script type="text/javascript" src="/mootools-1.4.1-core.js"></script>
 <script type="text/javascript" src="/mootools-1.4.0.1-more.js"></script>
 <script type="text/javascript" src="/simple-modal.js"></script>
@@ -51,7 +46,6 @@
               scrollwheel: false
             }
             var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-  
             var hotel = new google.maps.Marker({
                 position: new google.maps.LatLng(45.0881669,7.670446),
                 map: map,
@@ -62,101 +56,79 @@
         }
     </script>
 
-<script type='text/javascript'>  
-window.addEvent('domready', function() {  
-  
+<script type='text/javascript'>
+window.addEvent('domready', function() {
   $$('.program2').fade(0.6);
-  
   initialize_map();
-
   var modal = {
     title: "Solo fino a giovedì il biglietto scontato a 19,90 &euro;!",
     contents: "Grazie alla grande richiesta di biglietti, abbiamo deciso di <strong>prolungare la vendita dei biglietti scontati fino al 6 marzo</strong>.<br/><br/>Non perdere l'occasione di partecipare alla Cloud Conference: un grande evento per tutti i professionisti, sviluppatori e aziende del settore IT e Web!",
     go: false
-    
-      
   }
   switch (window.location.search) {
-  
-    case "?php" : 
+    case "?php" :
       modal.title = "Pensi che PHP non possa scalare?";
       modal.contents = "Alla Cloud Conference dimostreremo il contrario! Vieni a scoprire le strategie ed i servizi per far scalare il tuo applicativo PHP e MySQL. Rimarrai sopreso!";
       modal.go = true;
     break;
-    
-    case "?toms&utm_source=newslettertoms&utm_medium=banner&utm_campaign=scontotoms" : 
+    case "?toms&utm_source=newslettertoms&utm_medium=banner&utm_campaign=scontotoms" :
       modal.title = "Abbiamo riservato per te un interessante sconto!";
       modal.contents = "Grazie a <strong>Tom's Hardware</strong> puoi ottenere il biglietto per l'evento a soli <strong>19,90 euro</strong> invece che 29,90!<br/>Ti basta inserire il codice promozionale <strong>toms-user</strong> al momento della prenotazione!";
       modal.go = true;
     break;
-    
-    case "?hostingtalk&utm_source=hostingtalk&utm_medium=news&utm_campaign=sconto" : 
+    case "?hostingtalk&utm_source=hostingtalk&utm_medium=news&utm_campaign=sconto" :
       modal.title = "Abbiamo riservato per te un interessante sconto!";
       modal.contents = "Grazie a <strong>HostingTalk.it</strong> puoi ottenere il biglietto per l'evento a soli <strong>19,90 euro</strong> invece che 29,90!<br/>Ti basta inserire il codice promozionale <strong>hostingtalk-user</strong> al momento della prenotazione!";
       modal.go = true;
     break;
-    
     case "?grusp&utm_source=grusp&utm_medium=newsletter&utm_campaign=sconto" : 
       modal.title = "Abbiamo riservato per te un interessante sconto!";
       modal.contents = "Grazie al <strong>GRUSP</strong> puoi ottenere il biglietto per l'evento a soli <strong>19,90 euro</strong> invece che 29,90!<br/>Ti basta inserire il codice promozionale <strong>grusp-user</strong> al momento della prenotazione!";
       modal.go = true;
     break;
-    
     case "?ictbusiness&utm_source=ictbusiness&utm_medium=news&utm_campaign=sconto" : 
       modal.title = "Abbiamo riservato per te un interessante sconto!";
       modal.contents = "Grazie a <strong>IctBusiness.it</strong> puoi ottenere il biglietto per l'evento a soli <strong>19,90 euro</strong> invece che 29,90!<br/>Ti basta inserire il codice promozionale <strong>ictbusiness</strong> al momento della prenotazione!";
       modal.go = true;
     break;
-    
     case "?ticket":
       modal.go = true;
     break;
-    
-
-    case "?aws" : 
+    case "?aws" :
       modal.title = "Con il biglietto 25$ di credito su Amazon Web Services!";
       modal.contents = "La Cloud Conference punta a diventare il primo grande evento italiano sul Cloud Computing.<br/><br/>Per questa occasione, comprando il biglietto per l'evento otterrai un <strong>coupon di 25$ di credito gratuito</strong> da usare su AWS!";
       modal.go = true;
     break;
-
-    case "?sponsor" : 
+    case "?sponsor" :
       modal.title = "Sponsorizza l'evento!";
       modal.contents = "La Cloud Conference punta a diventare il primo grande evento italiano sul Cloud Computing.<br/><br/>Abbiamo aperto il <i>call for sponsor</i>, a partire da soli <strong>300 euro</strong>: è un'occasione unica per aumentare la visibilità della propria azienda attraverso un evento dedicato alle nuove tecnologie!";
       modal.go = true;
     break;
-
-    case "?nosql" : 
+    case "?nosql" :
       modal.title = "Cloud Computing e NoSQL!";
       modal.contents = "Alla Cloud Conference parleremo anche di NoSQL, con talk specifici che toccheranno <strong>OrientDB, mongoDB, DynamoDB e Redis</strong>!";
       modal.go = true;
     break;
-    
     /*default:
       modal.title = "Un grazie a tutti i partecipanti!";
       modal.contents = "La Cloud Conference si è conclusa!<br/>Per questo vogliamo ringraziare tutti i partecipanti, gli sponsor, i media partner, i collaboratori ed i relatori che hanno permesso che questa giornata si trasformasse in un successo.<br/><br/>Nell'attesa della <strong>prossima edizione</strong>, trovate le <strong>slide</strong> degli interventi nella sezione <i>programma</i>.";
       modal.go = false;
     break;*/
   }
-  
   if(modal.go) {
-    SM = new SimpleModal({width:600, btn_ok: "Ok! (chiudi la finestra)"});             
+    SM = new SimpleModal({width:600, btn_ok: "Ok! (chiudi la finestra)"});
       SM.show(modal);
   }
-    
-    
-  
   /*today=new Date()
   var birthday=new Date(2012, 0, 27);
   var one_day=1000*60*60*24
   var days =Math.ceil((today.getTime()-birthday.getTime())/(one_day));
   //$('blocks').set('html', days);
-  
   /**$('menu').getElements('span').each(function(day) {
     var dd=day.get('html').toInt();
     if(dd>days) day.destroy();
   });
   $('menu').reveal();*/
-  
   var links = $$('.link');
   links.each(function(link, ii) {
     link.addEvent('click', function(evento) {
@@ -165,27 +137,19 @@ window.addEvent('domready', function() {
       new Fx.Scroll(window).toElement('block'+iii);
     });
   });
-  
   $('gotop').addEvent('click', function() {
     new Fx.Scroll(window).toTop();
   });
-  
-  
-    
   var update_pos = function(fxc, el){
     var scroll = window.getScroll();
     fxc.start({
       'top': [el.getStyle('top'), scroll.y+250]
     });
   }
-    
-
 });
 </script>
-
-    
 </head>
-<body> 
+<body>
 <div class='lineare_no' id='liv0'>
     <div id='fixed' class='lineare_no'>
        <!-- <a href="#conferenza">La Cloud Conference 2014 sta arrivando! Aperti i call for paper!</a>-->
@@ -199,16 +163,12 @@ window.addEvent('domready', function() {
       <a href='https://www.facebook.com/pages/Cloud-Conf-Italia/140265592804313' target='_blank'><img src='facebook.png' border='0' /></a>
       <a href='/workshop/index.html' target='_blank' class="destra">Novità: Workshop 2 Aprile</a>
     </div>
-  
-  
   <div class='inside' id='liv1'>
     <div class='lineare_no' id='header'>
       <h2>giovedì 3 Aprile 2014 a Torino - seconda edizione</h2>
       <h1>Cloud Conference</h1>
       <h3>Il primo grande evento italiano dedicato a scalabilità e cloud development.</h3>
     </div>
-    
-    
     <div id='block1' class='block'> 
       <a name='conferenza' class='ancor'></a> 
       <div class='lineare_no' >
