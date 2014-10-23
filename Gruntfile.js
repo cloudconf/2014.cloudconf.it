@@ -11,10 +11,10 @@ module.exports = function ( grunt ) {
     ],
 
     copy: {
-      v2013: {
+      cname: {
         files: [
           {
-            src: [ './2013/**' ],
+            src: [ './CNAME' ],
             dest: 'build/',
             cwd: '.',
             expand: true
