@@ -81,12 +81,12 @@ window.addEvent('domready', function() {
       modal.contents = "Grazie a <strong>HostingTalk.it</strong> puoi ottenere il biglietto per l'evento a soli <strong>19,90 euro</strong> invece che 29,90!<br/>Ti basta inserire il codice promozionale <strong>hostingtalk-user</strong> al momento della prenotazione!";
       modal.go = true;
     break;
-    case "?grusp&utm_source=grusp&utm_medium=newsletter&utm_campaign=sconto" : 
+    case "?grusp&utm_source=grusp&utm_medium=newsletter&utm_campaign=sconto" :
       modal.title = "Abbiamo riservato per te un interessante sconto!";
       modal.contents = "Grazie al <strong>GRUSP</strong> puoi ottenere il biglietto per l'evento a soli <strong>19,90 euro</strong> invece che 29,90!<br/>Ti basta inserire il codice promozionale <strong>grusp-user</strong> al momento della prenotazione!";
       modal.go = true;
     break;
-    case "?ictbusiness&utm_source=ictbusiness&utm_medium=news&utm_campaign=sconto" : 
+    case "?ictbusiness&utm_source=ictbusiness&utm_medium=news&utm_campaign=sconto" :
       modal.title = "Abbiamo riservato per te un interessante sconto!";
       modal.contents = "Grazie a <strong>IctBusiness.it</strong> puoi ottenere il biglietto per l'evento a soli <strong>19,90 euro</strong> invece che 29,90!<br/>Ti basta inserire il codice promozionale <strong>ictbusiness</strong> al momento della prenotazione!";
       modal.go = true;
@@ -109,6 +109,12 @@ window.addEvent('domready', function() {
       modal.contents = "Alla Cloud Conference parleremo anche di NoSQL, con talk specifici che toccheranno <strong>OrientDB, mongoDB, DynamoDB e Redis</strong>!";
       modal.go = true;
     break;
+
+        default:
+          modal.title = "La CloudConf 2017 sta arrivando!";
+          modal.contents = "La quinta edizione del più importante evento tecnico sul cloud sta tornando a Torino<br/>Il 16 marzo 2017, unisciti a oltre 500 sviluppatori, startup e aziende per una giornata ricca di interventi tecnici su <strong>scalabilità, nosql, agile, cloud computing, api, deploy, iot...</strong><br><br>Non perdere i biglietti e sconti su <a href='http://2017.cloudconf.it' target='_blank'>http://2017.cloudconf.it</a>.";
+          modal.go = true;
+        break;
     /*default:
       modal.title = "Un grazie a tutti i partecipanti!";
       modal.contents = "La Cloud Conference si è conclusa!<br/>Per questo vogliamo ringraziare tutti i partecipanti, gli sponsor, i media partner, i collaboratori ed i relatori che hanno permesso che questa giornata si trasformasse in un successo.<br/><br/>Nell'attesa della <strong>prossima edizione</strong>, trovate le <strong>slide</strong> degli interventi nella sezione <i>programma</i>.";
@@ -169,11 +175,11 @@ window.addEvent('domready', function() {
       <h1>Cloud Conference</h1>
       <h3>Il primo grande evento italiano dedicato a scalabilità e cloud development.</h3>
     </div>
-    <div id='block1' class='block'> 
-      <a name='conferenza' class='ancor'></a> 
+    <div id='block1' class='block'>
+      <a name='conferenza' class='ancor'></a>
       <div class='lineare_no' >
-        <div class='trequarti margin_top_15'>     
-               
+        <div class='trequarti margin_top_15'>
+
 					      <div class='title'>
 					        <h3 class='testo_sin'><span class='grassetto'>La conferenza</span> - <span>Una giornata all'insegna della scalabilità</span></h3>
 					      </div>
@@ -183,12 +189,12 @@ window.addEvent('domready', function() {
                 <p>La CloudConference è un evento dedicato a <strong>sviluppatori, sistemisti, startup e IT manager</strong>.</p>
                 <p><strong>Chi ci sarà:</strong></p>
                 <p>Un panel di relatori d'eccezione, con ospiti da <strong>Amazon Web Services, ElasticSearch, Spotify, Redis.io, Zend Technologies, Cloud9 IDE</strong> e tanti altri. Una serie di interventi tecnici pensati per creare una grande giornata all'insegna della scalabilità. </p>
-					      <!-- 
+					      <!--
                 <p><strong>Torna la conferenza sul Cloud Computing dedicata a sviluppatori, startup e IT manager</strong>.</p>
                 <p>Grazie al successo dell'edizione <a href='/2013' target='_blank'>2013</a>, la CloudConference è diventata il punto di riferimento sulle tecnologie scalabili e cloud computing, coinvolgendo importanti aziende del settore quali Amazon Web Services, Trigger.io, Zend Technologies, Orient Technologies, e svariati media partner tra cui HTML.it, Tom's Hardware, HostingTalk e LinuxPRO.</p>
                 --><p>&nbsp;</p>
-                
-					                
+
+
 					      <div class='lineare'>
 					        <div class="addthis_wrapper lineare_no">
 					                       <!-- AddThis Button BEGIN -->
@@ -222,21 +228,21 @@ window.addEvent('domready', function() {
                 </p>
 	           </div>
 	        </div>
-	       
+
       </div>
-    
+
     </div>
-    
-    
-    
-    
-    
-    <div id='block2' class='block'> 
+
+
+
+
+
+    <div id='block2' class='block'>
       <a name='news' class='ancor'></a>
       <div class='title'>
         <h3 class='testo_sin'>Sì, sarà un <span class='grassetto'>evento straordinario</span>.</h3>
       </div>
-     
+
       <div class='lineare_no news' >
         <div class="trequarti">
           <div class="lineare_no">
@@ -248,17 +254,17 @@ window.addEvent('domready', function() {
               <p class="testo20 grassetto">Multitraccia</p>
               <p>12 interventi programmati in una scaletta multitraccia per permetterti di scegliere e seguire gli argomenti più vicini ai tuoi interessi.</p>
             </div>
-            
+
             <div class="terzo">
               <p class="testo20 grassetto">Networking</p>
               <p>Ampio spazio al networking grazie ad una scaletta distesa e pensata per favorire il contatto tra partecipanti e relatori. Non scordare di portare il biglietto da visita!</p>
             </div>
-            
-            
-            
+
+
+
           </div>
           <div class="lineare_5">
-            
+
             <div class="terzo">
               <p class="testo20 grassetto">Guardaroba &amp; Gadget</p>
               <p>Un evento è fatto anche di piccole cose: guardaroba gratuito, gadget dell'evento, area parcheggio e tanto altro!</p>
@@ -282,35 +288,35 @@ window.addEvent('domready', function() {
 		          <p class="testo20 grassetto">Cloud Bus</p>
 		          <p>Nonostante sia facilmente raggiungibile con i mezzi pubblici, abbiamo pensato a tutto organizzando un pullman gratuito andata e ritorno da Porta Susa e Porta Nuova (<a href="#location">orari</a>) </p>
 		        </div>
-		        
+
 		        <div class="terzo">
 		          <p class="testo20 grassetto">Cloud Webinar</p>
 		          <p>Abbiamo pensato ad una serie di webinar gratuiti che precederanno la conference per aiutare i meno esperti ad avvicinarsi ai temi e argomenti della conferenza.</p>
 		        </div>
           </div>
-        
+
         </div>
-        
+
         <div class="quarto price">
            <p class="testo20 grassetto">Prezzo contenuto</p>
            <p>L'obiettivo della CloudConf<br/>è formare, connettere, stupire.</p><p>L'intero evento è pensato per offrire una giornata di formazione dedicata a sviluppatori, startup e IT manager</p>
            <p>Grazie al supporto degli sponsor e dei relatori abbiamo potuto introdurre tante novità senza modificare il prezzo della prima edizione:</p>
            <p><strong>19,90 &euro;</strong> i biglietti prenota prima<br/><strong>29,90 &euro;</strong> i biglietti standard<br/><strong>89,90 &euro;</strong> workshop + conference<br/>&nbsp;</p>
            <p><a href="http://www.trampolineup.com/" target="_blank" style="border:0"><img src="sponsor_placejam.png" alt="trampoline placejam" border="0" style="bordeR:0;max-width:260px"/></p>
-              
+
         </div>
       </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    <div id='block3' class='block'> 
-      <a name='programma' class='ancor'></a> 
-      <div class='title'>    
+
+
+
+
+
+
+
+    <div id='block3' class='block'>
+      <a name='programma' class='ancor'></a>
+      <div class='title'>
         <h3><span class='grassetto'>Programma &amp; Biglietti</span></h3>
       </div>
       <div class='programs lineare_25'>
@@ -320,17 +326,17 @@ window.addEvent('domready', function() {
             <h3>Registrazione</h3>
           </div>
         </div>
-        
-        
+
+
         <div class='program program3'>
           <div class='decimo'>09:30 - 09:45</div>
           <div class='trequarti'>
-            <h3>Apertura e Benvenuto</h3> 
+            <h3>Apertura e Benvenuto</h3>
             <p>Introduzione dell'evento e dei relatori</p>
           </div>
         </div>
-        
-        
+
+
         <div class='program program3 aws'>
           <div class='decimo'>09:45 - 10:30</div>
           <div class='trequarti'>
@@ -340,7 +346,7 @@ window.addEvent('domready', function() {
             <p><a href='https://danilopoccia.s3.amazonaws.com/Presentations/CloudConf-1-20140331.pdf?AWSAccessKeyId=AKIAI7XQAT4EZOA7C45Q&Expires=1399537776&Signature=7LhwMEra%2Fhoh0iq%2B2PMLWb%2BnA%2BY%3D' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
         </div>
-        
+
         <div class='program program3 elastic'>
           <div class='decimo'>10:30 - 11:15</div>
           <div class='trequarti'>
@@ -357,18 +363,18 @@ In minutes, you will know how to build YOUR own dashboard and make sense of YOUR
            <p><a href='https://speakerdeck.com/elasticsearch/make-sense-of-your-big-data-3' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
         </div>
-    
-      
+
+
         <div class='program  program2 program3'>
           <div class='decimo'>11:15 - 11:45</div>
           <div class='trequarti coffee'>
             <h3>Coffee break!</h3>
           </div>
         </div>
-      
+
         <div class='program'>
           <div class='decimo'>11:45 - 12:30</div>
-          
+
           <div class='trequarti'>
             <p class="testo_grigio_78">TRACCIA REST &amp; FRONTEND</p>
             <h3>Problemi e soluzioni nello sviluppo di API RESTful</h3>
@@ -386,7 +392,7 @@ Per finire, verrà introdotto brevemente il progetto Apigility, un
 software open source per facilitare la creazione di API.</p>
            <p><a href='http://t.co/KJl2P10j9P' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
-          
+
            <div class='trequarti destra'>
             <p class="testo_grigio_78">TRACCIA DEPLOY</p>
             <h3>Saltstack, Provisioning Systems And Scalable Deploy Strategies</h3>
@@ -395,12 +401,12 @@ software open source per facilitare la creazione di API.</p>
     Il deploy è un punto cruciale nella gestione di ogni applicazione. In questo talk vedremo Saltstack come un sostituto asincrono di Puppet per il provisioning in un'architettura push / pull con più di 100 nodi. Scopriamo quanto è semplice implementare strategie per piccoli progetti con Fabric.</p>
             <p><a href='https://speakerdeck.com/mastrolinux/saltstack-fabric-and-the-deploy-problem' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
-          
+
         </div>
-      
+
         <div class='program'>
           <div class='decimo'>12:30 - 13:15</div>
-          
+
           <div class='trequarti'>
             <p class="testo_grigio_78">TRACCIA REST &amp; FRONTEND</p>
             <h3>AngularJS & Cloud Resources</h3>
@@ -408,7 +414,7 @@ software open source per facilitare la creazione di API.</p>
             <p class="abstract">Grazie alle potenzialità del framework JavaScript di Google possiamo integrare al meglio risorse cloud in una Single Page Application: scopriamo come interagire con servizi di storage remoti senza dipendenze da backend, consumare API RESTful e interagire con sistemi di code e notification di Amazon Web Services grazie agli strumenti di AngularJS.</p>
            <p><a href='http://www.slideshare.net/corleycloud/javascript-cloudslideshare' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
-          
+
            <div class='trequarti destra'>
             <p class="testo_grigio_78">TRACCIA DEPLOY</p>
              <h3>Deployment and Management on AWS: A Deep Dive on Options and Tools</h3>
@@ -416,19 +422,19 @@ software open source per facilitare la creazione di API.</p>
             <p class="abstract">Approfondimento tecnico su come gestire il ciclo di vita di intrastrutture ed applicationi usando servizi AWS quali Elastic Beanstalk, per un deploy rapido e la gestione delle applicazioni, OpsWorks, per modellare l'intera applicazione usando stack e layer, a CloudFormation, per descrivere risorse AWS e ogni dipendenza associata attraverso l'utilizzo di template.</p>
             <p><a href='https://danilopoccia.s3.amazonaws.com/Presentations/CloudConf-2-20140331.pdf?AWSAccessKeyId=AKIAI7XQAT4EZOA7C45Q&Expires=1399537790&Signature=AqJTCONwHrwcNQvUJ%2Fe7Q7picxs%3D' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
-          
+
         </div>
-        
+
         <div class='program  program2 program3'>
           <div class='decimo'>13:15 - 14:15</div>
           <div class='trequarti pizza'>
             <h3>Pranzo (offerto in loco)</h3>
           </div>
         </div>
-       
+
         <div class='program'>
           <div class='decimo'>14:15 - 15:00</div>
-          
+
           <div class='trequarti'>
             <p class="testo_grigio_78">TRACCIA REAL-TIME WEB</p>
             <h3>Build real-time applications with Javascript</h3>
@@ -436,7 +442,7 @@ software open source per facilitare la creazione di API.</p>
             <p class="abstract">Nelle applicazioni multiutente spesso vige la logica del "Chi salva per ultimo sovrascrive tutto". Nel 2014 è ancora necessario? Aggiungiamo un pizzico di realtime al nostro applicativo con Firebase, che ci permette, attraverso API, di memorizzare e sincronizzare dati in millisecondi, e di sviluppare app mobile e  web in pochi minuti con client-side coding.</p>
             <p><a href='http://www.slideshare.net/AntonelloPasella/antonello-pasella-cloud-conference-torino-build-realtime-applications-with-javascript' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
-          
+
            <div class='trequarti destra'>
             <p class="testo_grigio_78">TRACCIA DATABASE</p>
             <h3>Costruisci il TUO database con LevelDB e Node.js</h3>
@@ -444,13 +450,13 @@ software open source per facilitare la creazione di API.</p>
             <p class="abstract">Avete mai pensato di scrivere un vostro database? Un Key/Value store, o un database documentale? Oppure un Graph DB? O magari volete un database che si sincronizzi fra Browser e Server in modo trasparente? Nodebase è il movimento che fa per voi! Un gruppo di mad scientist nella comunità Node.js hanno preso l'ultraveloce LevelDB e hanno sviluppato decine di piccole librerie che consentono di aggiungerci tutte le funzionalità di cui avete bisogno, dalla replicazione all'indicizzazione: stiamo parlando di LevelUp!</p>
             <p><a href='http://mcollina.github.io/levelup-talk-cloudconf/' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
-          
+
         </div>
-        
-        
+
+
         <div class='program'>
           <div class='decimo'>15:00 - 15:45</div>
-          
+
           <div class='trequarti'>
             <p class="testo_grigio_78">TRACCIA REAL-TIME WEB</p>
            <h3>Cloud-ready web messaging with CometD</h3>
@@ -459,26 +465,26 @@ software open source per facilitare la creazione di API.</p>
             In questa sessione esploreremo le funzioni di CometD, quali il supporto ai WebSocket e el funzionalità cloud-oriented che rendono la tua applicazione CometD pronta a scalare.</p>
             <p><a href='http://www.slideshare.net/corleycloud/cloudready-web-messaging-with-cometd-by-s-bordet' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
-          
+
            <div class='trequarti destra'>
             <p class="testo_grigio_78">TRACCIA DATABASE</p>
             <h3>Database: backup e disaster recovery in Cloud</h3>
             <p class='speaker'>di <a href='http://walterdalmut.com' target='_blank'>Walter Dal Mut</a> (co-founder of <a href='' target='_blank'>Corley srl</a>, <a href='https://twitter.com/walterdalmut' target='_blank' class='twitter'><img src='social_twitter.png' border='0' alt=''/></a>)</p>
             <p class="abstract"> Viaggio dal Backup &amp; Restore fino al Multi-Site Disaster Recovery (on-premise e cloud), con una particolare attenzione ai database. Scopriamo le migliori strategie e metodologie, attraverso esempi reali e case study legati a MySQL e MongoDB, con l'obiettivo di garantire la continuità di servizio grazie a soluzioni in alta disponibilità. </p>
             <p><a href='http://www.slideshare.net/corleycloud/cloud-conf-2014' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
-          
+
            </div>
         </div>
-        
+
         <div class='program  program2 program3'>
           <div class='decimo'>15:45 - 16:15</div>
           <div class='trequarti coffee'>
             <h3>Coffee break!</h3>
           </div>
         </div>
-        
-      
-          
+
+
+
         <div class='program program3 spotify'>
           <div class='decimo'>16:15 - 17:00</div>
           <div class='trequarti'>
@@ -488,7 +494,7 @@ software open source per facilitare la creazione di API.</p>
             <p><a href='http://www.slideshare.net/JimmyMrdell/playlists-at-spotify-cassandra-summit-london-2013' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
           </div>
         </div>
-        
+
         <div class='program program3 redis'>
           <div class='decimo'>17:00 - 17:45</div>
           <div class='trequarti'>
@@ -506,21 +512,21 @@ stabilita', e la roadmap per l'immediato futuro.</p>
            <p><a href='http://www.slideshare.net/corleycloud/redis-by-s-sanfilippo-at-cloud-conference-2014' target='_blank'><span class='testo_rosso grassetto'>Clicca qui per le slide</span></a></p>
            </div>
         </div>
-    
-        
+
+
         <div class='program program2 program3'>
           <div class='decimo'>17:45 - 18:15</div>
           <div class='trequarti'>
             <h3>Chiusura e networking</h3>
           </div>
         </div>
-        
-        
+
+
       </div>
-    
-      
-    <div id='block4' class='block'> 
-      <a name='biglietti' class='ancor'></a> 
+
+
+    <div id='block4' class='block'>
+      <a name='biglietti' class='ancor'></a>
       <div class='lineare_no testo_cen' >
         <h3>I biglietti della Cloud Conference a soli 29,90 &euro;! E ottieni gratis coupon e sconti dai cloud provider!</h3>
         <div class='lineare' >
@@ -529,54 +535,54 @@ stabilita', e la roadmap per l'immediato futuro.</p>
         <div class='lineare testo_cen'>La CloudConference è un evento divulgativo. Non si vende alcun servizio o prodotto. Il nostro obiettivo è contribuire alla crescita della comunità tecnologica italiana.</div>
       </div>
     </div>
-    
-    
 
-    
-    
-    <div  class='block'> 
+
+
+
+
+    <div  class='block'>
       <h3><span class='grassetto'></span></h3>
       <div class='lineare testo_cen'><a href='https://twitter.com/_CloudConf_' target='_blank'><img src='/follow.png' alt='' /></a></div>
       <div class='lineare testo_cen testo13 italico'>non dimenticare di seguirci su Twitter!</div>
     </div>
-    
-    
-    
 
 
-    
-    
+
+
+
+
+
 </div>
-    
-    
-    
-    
-    
-    
-    
- 
-    
-    <div id='block5' class='block'> 
-      <a name='location' class='ancor'></a> 
-      <div class='title'>    
+
+
+
+
+
+
+
+
+
+    <div id='block5' class='block'>
+      <a name='location' class='ancor'></a>
+      <div class='title'>
         <h3><span class='grassetto'>La Location</span></h3>
       </div>
          <p class="testo_cen">L'evento si svolgerà all'EnviPark, facilmente raggiungibile in auto e con i mezzi pubblici, o con il nostro Cloud Bus!</p>
          <p class="testo_cen"><strong><a href='http://www.envipark.com/centro-congressi-eventi/' target='_blank'>Centro Congressi EnviPark</a></strong><br/>via Livorno 60, Torino</p>
-	      
+
 	      <div class="lineare_20">
 	       <div class="meta">
 	          <div class='lineare_no' id='map_canvas_over'>
 	            <div class='lineare_no' id='map_canvas'></div>
 	          </div>
 	       </div>
-	       
+
 	        <div class="meta destra">
               <div class='lineare_no' id='park_over'>
                     <div class='lineare_no' id='park'></div>
               </div>
            </div>
-	      
+
 	      </div>
       <div class='lineare_20'>
         <div class='quinto'>
@@ -597,7 +603,7 @@ stabilita', e la roadmap per l'immediato futuro.</p>
             All'<strong>andata</strong>, partenza da Torino Porta Nuova ore 9:00, porta Susa 9:10, arrivo conferenza 9:20.<br/>
             Al <strong>ritorno</strong>, partenza dalla conferenza ore 18:00, arrivo porta Susa 18:10 e Porta Nuova 18:20.<br/><br/>
             Il servizio è gratuito. Una volta acquistato il biglietto sarai contattato via mail per l'eventuale prenotazione di un posto.
-            
+
            </p>
         </div>
         <div class='quinto destra' >
@@ -608,33 +614,33 @@ stabilita', e la roadmap per l'immediato futuro.</p>
         </div>
       </div>
     </div>
-    
-    
-    
-      <div id='block6' class='block'> 
-      <a name='sponsor' class='ancor'></a> 
-      <div class='title'>    
+
+
+
+      <div id='block6' class='block'>
+      <a name='sponsor' class='ancor'></a>
+      <div class='title'>
         <h3><span class='grassetto'>Sponsor</span></h3>
       </div>
       <div class='lineare_no testo_cen' >
-          
-            
+
+
             <div class='lineare_20 testo_cen'>
             <strong>L'elenco degli sponsor è in fase di definizione.</strong></div>
-            
+
             <div class='lineare_20'><h3 class='silver'><i>Diamond</i></h3></div>
             <div class='lineare_20 testo_cen'>
               <a href='http://www.entercloudsuite.it/cloudconference.html' target='_blank'><img src='/sponsor_ecs_ca_300.jpg' class='sponsor' /></a>
             </div>
-            
+
             <div class='lineare_20'><h3 class='gold'><i>Gold</i></h3></div>
             <div class='lineare_20 testo_cen gold-img'>
               <a href='http://www.corley.it' target='_blank'><img src='/sponsor_corley.png' class='sponsor' /></a>
               <a href='http://www.interlogica.it/' target='_blank'><img src='/sponsor_interlogica.png' class='sponsor' /></a>
               <a href='http://www.neen.it/' target='_blank'><img src='/sponsor_neen.png' class='sponsor' /></a>
             </div>
-            
-            
+
+
             <div class='lineare_20'><h3 class='silver'><i>Silver</i></h3></div>
             <div class='lineare_20 testo_cen silver-img'>
               <a href='http://www.scloby.com' target='_blank'><img src='/sponsor_scloby.png' class='sponsor' /></a>
@@ -642,8 +648,8 @@ stabilita', e la roadmap per l'immediato futuro.</p>
               <a href='http://www.elb.it' target='_blank'><img src='/sponsor_elb.jpg' class='sponsor' /></a>
               <a href='http://www.criticalcase.com' target='_blank'><img src='/sponsor_critical.jpg' class='sponsor' /></a>
             </div>
-            
-             
+
+
              <div class='lineare_20'><h3><i>Con la collaborazione di </i></h3></div>
              <div class='lineare_20 testo_cen sponsormedia'>
                  <a href='http://torino.grusp.org/' target='_blank'><img src='/sponsor_pug.png' class='sponsor' /></a>
@@ -657,34 +663,34 @@ stabilita', e la roadmap per l'immediato futuro.</p>
                  <a href='http://www.codeinvaders.net' target='_blank'><img src='/sponsor_code.png' class='sponsor' /></a>
                  <a href='http://www.squarespace.com' target='_blank'><img src='/sponsor_squarespace.jpg' class='sponsor' /></a>
                  <a href="http://www.trampolineup.com/" target="_blank" ><img src="sponsor_placejam.png" alt="trampoline placejam" class="sponsor"/></a>
-              
+
              </div>
-          
-            
-        <div class='lineare'>&nbsp;</div>   
-        <div class='lineare'>    
+
+
+        <div class='lineare'>&nbsp;</div>
+        <div class='lineare'>
           <h3><span class='grassetto'>Sponsorizza</span></h3>
         </div>
-            
+
            <div class='lineare'>
              <div class='meta'>
                <p>La CloudConference è possibile anche grazie all'impegno e supporto degli sponsor.</p>
                 <p class="">Per informazioni sull'evento e sulle possibilità di sponsorizzazione, <a href='mailto:cloudconf@corley.it'>contattateci</a> e seguiteci sui nostri canali social:</p>
              </div>
            </div>
-             
+
       </div>
-    </div> 
-    
-    
-    
-  
+    </div>
+
+
+
+
   <div class='staytuned lineare_no'>ti aspettiamo!</div>
   <div class='footer'>&copy; CloudConference - Giovedì 3 Aprile 2014, Torino - <span id='gotop' class='puntatore'>torna in cima</span></div>
 </div>
 
 
-    
+
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-15028790-12']);
@@ -697,10 +703,10 @@ stabilita', e la roadmap per l'immediato futuro.</p>
   })();
 
 </script>
-    
+
 </div>
 
 
-    
+
 </body>
 </html>
